@@ -1,7 +1,7 @@
 {
     "name": "luochaolun/page",
     "description": "simple php fenye with medoo",
-    "type": "library",
+    "type": "framework",
     "license": "MIT",
     "authors": [
         {
@@ -9,13 +9,12 @@
             "email": "yyvok@163.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
 		"php": ">=5.4"
 	},
     "autoload": {
         "psr-4": {
-            "luochaolun\\Page\\": "src/luochaolun/Page"
+            "Page\\": "src/"
         }
     }
 }
