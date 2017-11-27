@@ -1,5 +1,5 @@
 <?php
-namespace Luochaolun\Page;
+namespace LclTools;
 
 class Page {
 	private $total;    	//总记录

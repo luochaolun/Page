@@ -1,5 +1,5 @@
 {
-    "name": "luochaolun/page",
+    "name": "luochaolun/Page",
     "description": "simple php fenye",
     "license": "MIT",
 	"keywords": ["page"],
@@ -14,8 +14,8 @@
 		"php": ">=5.4"
 	},
     "autoload": {
-        "psr-0": {
-            "Luochaolun\\Page": "src/luochaolun/Page"
+        "psr-4": {
+            "LclTools\\": "src/"
         }
     }
 }
