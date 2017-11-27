@@ -1,11 +1,12 @@
 {
     "name": "luochaolun/page",
-    "description": "simple php fenye with medoo",
-    "type": "framework",
+    "description": "simple php fenye",
     "license": "MIT",
+	"keywords": ["page"],
+    "version": "1.0.0",
     "authors": [
         {
-            "name": "骆超伦",
+            "name": "luochaolun",
             "email": "yyvok@163.com"
         }
     ],
@@ -13,8 +14,8 @@
 		"php": ">=5.4"
 	},
     "autoload": {
-        "psr-4": {
-            "Page\\": "src/"
+        "psr-0": {
+            "luochaolun\\Page": "src/"
         }
     }
 }

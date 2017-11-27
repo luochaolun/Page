@@ -1,5 +1,5 @@
 <?php
-namespace Luochaolun;
+namespace luochaolun\Page;
 
 class Page {
 	private $total;    	//总记录
