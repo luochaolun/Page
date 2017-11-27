@@ -42,11 +42,13 @@ class Page {
   	private function setUrl() {
 		$_url = $_SERVER["REQUEST_URI"];
    		$_par = parse_url($_url);
+		$query = array();
    		if (isset($_par['query'])) {
 			parse_str($_par['query'], $_query);
 			unset($_query['page']);
-			$_url = $_par['path'] . '?' . http_build_query($_query);
+			$query = $_query;
    		}
+		$_url = $_par['path'] . '?' . http_build_query($query);
    		return $_url;
   	}
 
@@ -98,6 +100,7 @@ class Page {
 		$_page .= $this->pageList();
 		$_page .= $this->next();
 		$_page .= $this->last();
+		$_page = trim(str_replace('?&', '?', $_page));
 		return $_page;
 	}
 }
